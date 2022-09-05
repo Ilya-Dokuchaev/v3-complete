@@ -1,0 +1,96 @@
+.container {
+  @include container(1200px, 0);
+}
+
+.main {
+  position: relative;
+  max-width: 100%;
+  height: 850px;
+  background: url(../img/bg.webp);
+  @include bg(cover);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.68rem;
+}
+
+.header__adress {
+  & img {
+    margin-right: 17px;
+  }
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  line-height: 1rem;
+  color: #ffffff;
+}
+
+.header__messandgers {
+  & img {
+    padding-right: 0.9375rem;
+  }
+}
+
+.messandgers__tel {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.header__btn {
+  @include button-sm();
+}
+
+.benefits {
+  margin-top: 117px;
+
+  .benefits__title {
+    color: $white;
+    font: normal 800 50px/60px " Montserrat", sans-serif;
+
+    &::before {
+      content: "Сауна Viza";
+      color: $mainColor;
+    }
+  }
+
+  padding-bottom: 100px;
+}
+
+.benefits__list {
+  list-style: none;
+  margin-top: 63px;
+  padding-left: 0;
+
+  & .benefits__item {
+    color: $white;
+    font: $mainFont;
+    display: flex;
+    align-items: center;
+    padding-bottom: 25px;
+  }
+
+  ::before {
+    content: '';
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 25px;
+    width: 100%;
+    height: 25px;
+    margin-right: 15px;
+  }
+}
+
+.benefit__button {
+  @include button-md();
+  margin-top: 60px;
+}

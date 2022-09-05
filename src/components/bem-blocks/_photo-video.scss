@@ -1,0 +1,112 @@
+.bg {
+  padding-top: 100px;
+  padding-bottom: 124px;
+  background-color: #f1f1f1;
+}
+
+.photo__title {
+  position: relative;
+}
+
+.photo__title--back {
+  font: $hFontLg;
+  font-size: 70px;
+  line-height: 70px;
+  color: #dfdfdf;
+}
+
+.photo__title--front {
+  position: absolute;
+  top: 32px;
+  left: 0;
+  font: $hFontLg;
+
+  &::before {
+    content: "Фото ";
+    color: $mainColor;
+  }
+}
+
+#mainCarousel {
+  width: 100%;
+  margin: 0 auto 1rem auto;
+  padding: 0;
+  margin-top: 53px;
+
+  --carousel-button-color: #170724;
+
+  --carousel-button-svg-width: 20px;
+  --carousel-button-svg-height: 20px;
+  --carousel-button-svg-stroke-width: 2.5;
+}
+
+#mainCarousel .carousel__slide {
+  width: 100%;
+  height: 475px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+#mainCarousel .carousel__button.is-prev {
+  left: -1.5rem;
+}
+
+#mainCarousel .carousel__button.is-next {
+  right: -1.5rem;
+}
+
+#thumbCarousel .carousel__slide {
+  opacity: 0.5;
+  padding: 0;
+  margin: 0.25rem;
+  width: 96px;
+  height: 64px;
+  overflow: hidden;
+  margin-top: 42px;
+}
+
+#thumbCarousel .carousel__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+#thumbCarousel .carousel__slide.is-nav-selected {
+  opacity: 1;
+}
+
+.carousel__slide.video-pl {
+  position: relative;
+}
+
+.--svg__play-btn {
+  max-width: 70px;
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  bottom: 0;
+  right: 0;
+
+  // transform: translate(-50%, -50%);
+  cursor: pointer;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+
+}
+
+.book__btn {
+  margin: 0 auto;
+  @include button-md;
+  margin-top: 40px;
+}

@@ -1,0 +1,1397 @@
+@media screen and (min-width: 1920px) {
+  body {
+    zoom: 125%;
+  }
+}
+
+@media(max-width: 1360px) {
+  .container {
+    @include container(900px)
+  }
+
+  .main {
+    height: 600px;
+  }
+
+  .benefits {
+    margin-top: 0px;
+    padding-bottom: 0px;
+
+    .benefits__title {
+      font: normal 800 36px/40px " Montserrat", sans-serif;
+
+    }
+
+  }
+
+  .benefits__list {
+    margin-top: 30px;
+
+    & .benefits__item {
+      padding-bottom: 15px;
+    }
+
+    & li::before {
+      margin-right: 15px;
+    }
+  }
+
+  //end header
+
+  .bg {
+    padding-top: 80px;
+    padding-bottom: 124px;
+  }
+
+  // end photo-video
+  .services {
+    flex-wrap: nowrap;
+  }
+
+  .services-bg {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .services__block {
+    display: block;
+    width: 200px;
+  }
+
+  .services-block__img {
+    height: 180px;
+    margin: 0;
+  }
+
+  .services-block__text {
+    margin-left: 10px;
+  }
+
+  //end services
+  .square-bg {
+    @include bg(cover);
+  }
+
+  .services {
+    justify-content: space-between;
+  }
+
+  .square__text-box {
+    margin: 0 auto;
+  }
+
+  //end square
+  .discount-bg {
+    padding-top: 60px;
+  }
+
+  .discount__list {
+    margin-top: 50px;
+  }
+
+  .discount-item__img {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  //end discounts
+  .healthncare-bg {
+    padding-top: 60px;
+  }
+
+  .healthncare__container {
+    align-items: flex-start;
+
+    .book__btn {
+      margin: 10px auto;
+    }
+  }
+
+  .healthncare__img {
+    max-width: 400px;
+    margin-top: 80px;
+    border-radius: 5px;
+  }
+
+  //end healthncare
+  .indivbox-bg {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .indivbox-wrapper {
+    justify-content: space-evenly;
+
+  }
+
+  //end indivbox
+  .kitchen-bg {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .kitchen-wrapper {
+    max-width: 100%;
+    margin-left: auto;
+
+  }
+
+  .kitchen__content {
+    display: flex;
+    padding-bottom: 60px;
+  }
+
+  .kitchen-delivery__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-right: 100px;
+
+    align-items: center;
+  }
+
+  .kitchen__text {
+    text-align: center;
+  }
+
+  //end kitchen
+  .room-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  //end room
+  .party-bg {
+    background: #F1F1F1;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  #map {
+    width: 500px;
+  }
+
+}
+
+//end screen <1300px
+@media (max-width:980px) {
+  .container {
+    @include container(700px);
+  }
+
+
+
+  .header__messandgers {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .messandgers__tel {
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .header__btn {
+    display: none;
+  }
+
+  .benefits .benefits__title {
+    margin-top: 50px;
+    font: normal 800 28px/30px " Montserrat", sans-serif;
+
+  }
+
+  .benefits__list {
+    margin-top: 30px;
+
+    & .benefits__item {
+      font-size: 12px;
+      padding-bottom: 10px;
+    }
+
+    ::before {
+      max-width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+  }
+
+  .benefit__button {
+    @include button-sm();
+
+    & a {
+      font-size: 12px;
+
+    }
+
+    margin-top: 130px;
+  }
+
+  //end header
+  .bg {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f1f1f1;
+  }
+
+  .photo__title--back {
+    font-size: 50px;
+
+  }
+
+  .photo__title--front {
+    font-size: 28px;
+    top: 22px;
+  }
+
+  #mainCarousel {
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  #mainCarousel .carousel__slide {
+    height: 375px;
+
+  }
+
+  .--svg__play-btn {
+    width: 50px;
+    min-height: 83px;
+  }
+
+  #thumbCarousel .carousel__slide {
+    opacity: 0.5;
+    padding: 0;
+    margin: 0.25rem;
+    width: 96px;
+    height: 64px;
+    overflow: hidden;
+    margin-top: 10px;
+  }
+
+  //end photo-video
+  .services-bg {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .section__title--front {
+    font-size: 28px;
+    top: 20px;
+  }
+
+  .section__title--back {
+    font-size: 50px;
+  }
+
+  .services {
+    margin-top: 30px;
+  }
+
+  .services-block__img {
+    height: 130px;
+    width: 150px;
+  }
+
+  .services__block {
+    width: 150px;
+    flex-wrap: wrap;
+  }
+
+  .services-block__text {
+    margin-left: 0;
+  }
+
+  .services-block__title {
+    font-size: 16px;
+    text-align: left;
+    line-height: 15px;
+    padding: 20px 0;
+  }
+
+  .services-block__list {
+    padding: 0;
+    font-size: 12px;
+
+    & .services-list__item {
+      padding-bottom: 5px;
+    }
+
+    ::before {
+      max-width: 15px;
+      height: 15px;
+    }
+  }
+
+  //end services
+  .square-bg {
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+
+  .square__title :last-child {
+    padding-bottom: 20px;
+  }
+
+  .square__text-box {
+    height: 100%;
+    overflow: hidden;
+    margin-left: auto;
+    padding: 0px 20px;
+  }
+
+  .square__title--front {
+    font-size: 28px;
+  }
+
+  .square__title--back {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .square__text {
+    font-size: 12px;
+    margin: 20px 0 0;
+
+  }
+
+  //end square
+  .discount-bg {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .discount__title--front {
+    font-size: 28px;
+    top: 20px;
+
+  }
+
+  .discount__title--back {
+    font-size: 50px;
+
+  }
+
+  .discount__list {
+    margin-top: 20px;
+  }
+
+  .discount__item {
+    max-width: 200px;
+    width: 100%;
+  }
+
+  .discount-item__img {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .discount-item__title {
+    font-size: 16px;
+    text-align: center;
+    line-height: 15px;
+    margin-top: 5px;
+  }
+
+  .discount-item__text {
+    margin-top: 20px;
+    line-height: 15px;
+    font-size: 12px;
+
+  }
+
+  .discount__disclamer {
+    font-size: 12px;
+
+    max-width: 558px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  //end discounts
+  .healthncare-bg {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .healthncare__img {
+    max-width: 300px;
+  }
+
+  .healthncare__title {
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  .healthncare__title--front {
+    top: 90px;
+    font-size: 28px;
+    line-height: 30px;
+  }
+
+  .healthncare__title--back {
+    font-size: 50px;
+    line-height: 50px;
+
+  }
+
+  .healthncare__text-title {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .healthncare__text-main {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .healthncare__list {
+    font-size: 12px;
+
+    ::before {
+      max-width: 15px;
+      height: 15px;
+    }
+  }
+
+  .book__btn {
+    @include button-sm();
+
+    & a {
+      font-size: 12px;
+
+    }
+
+  }
+
+  //end healthncare
+  .indivbox-bg {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .indivbox__title--front {
+    font-size: 28px;
+    top: 50px;
+    line-height: 30px;
+  }
+
+  .indivbox__title--back {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .indivbox__item {
+    max-width: 200px;
+
+    & .indivbox-item__title {
+      padding-top: 20px;
+      font-size: 16px;
+    }
+  }
+
+  //end indivbox
+  .kitchen-wrapper {
+    padding-top: 50px;
+    margin-left: auto;
+  }
+
+  .kitchen__content {
+    margin-top: 40px;
+  }
+
+  .kitchen__title {
+    padding: 0;
+
+    .kitchen__title--front {
+      top: 10px;
+      font-size: 28px;
+    }
+  }
+
+  .kitchen__title--back {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .kitchen__text {
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .food-wrapper {
+    margin-right: 20px;
+  }
+
+  .kitchen-delivery__wrapper {
+    padding-top: 0px;
+    padding-right: 50px;
+  }
+
+  .delivery-pic__wrapper {
+    display: flex;
+
+    & img {
+      border-radius: 20px;
+    }
+  }
+
+  .food-box {
+    & .--svg__point-li {
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  //end kitchen
+  .room-bg {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .room__bg {
+      top: 100%;
+      transform: translate(0, -100%);
+      height: 400px;
+    }
+  }
+
+  .room__slider {
+    max-width: 400px;
+  }
+
+  #roomCarousel .carousel__slide {
+    height: 400px;
+
+  }
+
+  .carousel__slide .room-btn {
+    max-width: 152px;
+    padding: 10px 0 10px 0;
+
+    & a {
+      font-size: 12px;
+    }
+  }
+
+  .room__title--front {
+    font-size: 28px;
+    top: 50px;
+    line-height: 30px;
+  }
+
+  .room__title--back {
+    font-size: 50px;
+    line-height: 50px;
+
+  }
+
+  .room__main-text {
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 10px;
+  }
+
+  .room__list {
+    font-size: 12px;
+
+    & .room-list__item {
+      display: flex;
+      align-items: center;
+      padding-bottom: 5px;
+    }
+
+    & ::before {
+      max-width: 20px;
+      height: 20px;
+    }
+  }
+
+  #room__btn {
+    max-width: 196px;
+    padding: 10px;
+  }
+
+  //end room
+  .party-bg {
+    padding-top: 40px;
+  }
+
+  .party__title--front {
+    font-size: 28px;
+    top: 50px;
+    line-height: 30px;
+  }
+
+  .party__title--back {
+    font-size: 50px;
+    line-height: 50px;
+
+  }
+
+  .party__wrapper {
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .party__item {
+    max-width: 200px;
+
+    & img {
+      max-width: 200px;
+    }
+
+    & p {
+      font-size: 12px;
+      padding: 0px;
+      text-align: center;
+    }
+
+    & .party-pic__title {
+      font-size: 16px;
+      padding: 20px;
+      text-align: center;
+    }
+  }
+
+  //end party
+  .faq__title--wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .faq__title--front {
+    font-size: 28px;
+    top: 50px;
+    line-height: 30px;
+  }
+
+  .faq__title--back {
+    font-size: 50px;
+    line-height: 50px;
+
+  }
+
+  .accordion {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .accordion__title {
+    padding: 15px 10px 15px 0;
+    font-size: 16px;
+  }
+
+  .accordion__icon {
+    &::after {
+      font-size: 30px;
+    }
+
+
+
+  }
+
+  .accordion__content p {
+    font-size: 12px;
+    color: black;
+    line-height: 20px;
+  }
+
+  //end accordion
+  .footer__bg {
+    padding: 40px 0;
+  }
+
+  .footer__wrapper {
+    margin-top: 0px;
+  }
+
+  .footer__title--back {
+    font-size: 50px;
+    line-height: 50px;
+
+  }
+
+  .footer__title--front {
+    font-size: 28px;
+    top: 30px;
+    line-height: 30px;
+  }
+
+  .contacts__wrapper a {
+    font-size: 16px;
+  }
+
+  .contacts__wrapper address {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .social-media__item {
+    flex-wrap: wrap;
+
+    &:not(:last-child) {
+      padding-bottom: 20px;
+
+    }
+
+    & span {
+      margin-left: 26px;
+      font-family: 'Oswald';
+      font-style: normal;
+      font-weight: 600;
+      letter-spacing: 0.7px;
+      font-size: 12px;
+      line-height: 20px;
+      color: #FFFFFF;
+    }
+  }
+
+  #map {
+    margin-right: 50px;
+    width: 300px;
+    height: 350px;
+  }
+
+  //end footer
+}
+
+@media (max-width:760px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .main {
+    height: 500px;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__logo {
+    width: 80px;
+  }
+
+  .header__adress img {
+    display: none;
+  }
+
+  .header__messandgers {
+    display: none;
+  }
+
+  .messandgers__tel {
+    display: none;
+  }
+
+  .benefits .benefits__title {
+    margin-top: 20px;
+    font: normal 800 20px/30px " Montserrat", sans-serif;
+  }
+
+  .benefits__list {
+    margin-top: 10px;
+  }
+
+  .benefits__item {
+    max-width: 170px;
+    padding-bottom: 0;
+  }
+
+  .benefit__button {
+    margin: 0;
+    margin-top: 10px;
+    max-width: 150px;
+    padding: 5px;
+  }
+
+  //end header
+  .bg {
+    padding: 20px 0;
+  }
+
+  .photo__title--back {
+    display: none;
+  }
+
+  .photo__title--front {
+    position: static;
+    text-align: center;
+    line-height: 30px;
+  }
+
+  #mainCarousel {
+    margin-top: 0px;
+  }
+
+  #mainCarousel .carousel__button.is-prev {
+    left: 0rem;
+    z-index: 2;
+    color: white;
+  }
+
+  #mainCarousel .carousel__button.is-next {
+    right: 0rem;
+    z-index: 2;
+    color: white;
+  }
+
+  #mainCarousel .carousel__slide {
+    height: 250px;
+
+  }
+
+  .carousel__slide {
+    padding: 10px;
+  }
+
+  .--svg__play-btn {
+    width: 40px;
+  }
+
+  #thumbCarousel .carousel__slide {
+    margin: 0 3px;
+  }
+
+  #thumbCarousel .carousel__track {
+    width: 400px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  .book__btn {
+    margin: 20px auto 0 auto;
+  }
+
+  //end photo-video
+  .services-bg {
+    padding: 20px 0;
+  }
+
+  .section__title--back {
+    display: none;
+  }
+
+  .section__title--front {
+    position: static;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .services {
+    flex-wrap: wrap;
+    max-width: 400px;
+    margin: 20px auto 0;
+    justify-content: center;
+  }
+
+
+  .services-block__title {
+    padding: 10px 0 5px;
+  }
+
+  .services__block {
+    margin-top: 20px;
+
+
+  }
+
+  .services__block:nth-of-type(odd) {
+    margin-right: 30px;
+  }
+
+
+  .services-block__list {
+
+    ::before {
+      margin-right: 5px;
+    }
+  }
+
+  //end services
+
+  .square-bg {
+    padding: 20px 0;
+  }
+
+  .square__title--back {
+    display: none;
+  }
+
+  .square__title--front {
+    position: static;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .square__text {
+    margin-top: 10px;
+  }
+
+  //end square
+  .discount-bg {
+    padding: 20px 0;
+  }
+
+  .discount__title--back {
+    display: none;
+  }
+
+  .discount__title--front {
+    position: static;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .discount__item {
+    margin-right: 20px;
+  }
+
+  .discount__item:last-of-type {
+    margin-right: 0px;
+  }
+
+  //end discount
+  .healthncare-bg {
+    padding: 20px 0;
+  }
+
+  .healthncare__container img {
+    display: none;
+  }
+
+  .healthncare__text {
+    padding: 0;
+  }
+
+  .healthncare__title--back {
+    display: none;
+  }
+
+  .healthncare__title--front {
+    position: static;
+    line-height: 30px;
+  }
+
+  //end healthncare
+  .indivbox__title--back {
+    display: none;
+  }
+
+  .indivbox__title--front {
+    position: static;
+    max-width: 300px;
+    margin: 0 auto;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .indivbox-bg {
+    padding: 20px 0;
+  }
+
+  .indivbox-wrapper {
+    margin-top: 20px;
+  }
+
+  //end indivbox
+  .kitchen__content {
+    flex-wrap: wrap;
+    margin-top: 0;
+    padding-bottom: 0;
+
+  }
+
+  .kitchen-wrapper {
+    padding: 20px;
+  }
+
+  .food-wrapper {
+    margin: 20px;
+  }
+
+  .kitchen__text {
+    margin-top: 20px;
+  }
+
+  .kitchen__title--back {
+    display: none;
+  }
+
+  .kitchen-delivery__wrapper {
+    padding: 0;
+  }
+
+  .kitchen__title .kitchen__title--front {
+    position: static;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  //end kitchen
+  .room-bg {
+    padding: 20px 0;
+  }
+
+  .room-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .room__title--back {
+    display: none;
+  }
+
+  .room__title--front {
+    position: static;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .room__slider {
+    display: none;
+  }
+
+  //end room
+  .party-bg {
+    padding: 20px 0;
+  }
+
+  .party__title--back {
+    display: none;
+  }
+
+  .party__title--front {
+    position: static;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .party__wrapper {
+    margin: 20px auto auto 0;
+    justify-content: center;
+  }
+
+  .party__item {
+    margin-top: 10px;
+  }
+
+  .party__item:nth-of-type(odd) {
+    margin-right: 20px;
+
+  }
+
+  .party__item .party-pic__title {
+    padding: 0;
+  }
+
+  //end party
+  .faq__title--wrapper {
+    padding: 20px 0 0 0;
+  }
+
+  .faq__title--back {
+    display: none;
+  }
+
+  .faq__title--front {
+    position: static;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  //end faq
+  .footer__wrapper {
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer__title--back {
+    display: none;
+  }
+
+  .footer__title--front {
+    position: static;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .footer__title {
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  .contacts__wrapper {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    a {
+      padding: 0;
+      order: 2;
+      text-align: center;
+
+    }
+
+    address {
+      padding: 0;
+      order: 3;
+      text-align: center;
+
+    }
+
+    .social-media__wrapper {
+      order: 0;
+    }
+
+    .book__btn {
+      display: none;
+    }
+  }
+
+
+
+  .social-media__wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+  }
+
+  .social-media__item {
+    padding: 0;
+    flex-direction: column;
+    justify-items: baseline;
+    justify-content: flex-end;
+    margin-right: 10px;
+
+    & img {
+      height: 25px;
+    }
+
+    & span {
+      margin: 10px 0 0;
+
+    }
+
+    &:not(:last-child) {
+      padding: 0;
+    }
+  }
+
+  #map {
+    margin: 0;
+    width: 350px;
+    height: 200px;
+  }
+}
+
+@media (max-width:340px) {
+  .container {
+    padding: 10px 10px;
+  }
+
+  .kitchen__text {
+    width: 200px;
+  }
+
+  .delivery-pic__wrapper img {
+    margin: 0;
+
+    &:nth-of-type(1) {
+      margin-right: 10px;
+    }
+  }
+
+  .discount__list {
+    flex-wrap: wrap;
+  }
+
+  #map {
+    margin-top: 20px;
+    width: 200px;
+    height: 300px;
+  }
+
+  .main {
+    background: rgba(0, 0, 0, 0.9);
+    height: 470px;
+  }
+
+  .benefits .benefits__title {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .benefits__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .benefit__button {
+    margin: 10px auto 0;
+  }
+
+  .photo__title--front {
+    font-size: 24px;
+    line-height: 20px;
+    padding-bottom: 10px;
+  }
+
+  #mainCarousel .carousel__slide {
+    & #video-bg {
+      object-position: -290px;
+    }
+  }
+
+  .--svg__play-btn {
+    width: 25px;
+  }
+
+  .book__btn {
+    max-width: 150px;
+    padding: 5px;
+    margin: 0 auto;
+  }
+
+  .bg {
+    padding: 5px 0;
+  }
+
+  #thumbCarousel {
+    display: none;
+  }
+
+  .services-bg {
+    padding: 5px 0;
+  }
+
+  .section__title--front {
+    font-size: 24px;
+    line-height: 20px;
+    padding-bottom: 10px;
+  }
+
+  .services {
+    margin: 0;
+  }
+
+  .services__block {
+    margin: 20px 0 0;
+
+    &:nth-of-type(odd) {
+      margin: 20px 0 0;
+    }
+  }
+
+  .services-block__title {
+    text-align: center;
+    padding-top: 0;
+  }
+
+  .square__title--front {
+    font-size: 24px;
+    line-height: 20px;
+    padding-bottom: 10px;
+    text-align: end;
+  }
+
+  .discount__title--front {
+    font-size: 24px;
+    line-height: 20px;
+    padding-bottom: 10px;
+  }
+
+  .discount__list {
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .discount__item {
+    margin: 0;
+    padding-bottom: 20px;
+  }
+
+  .healthncare__title--front {
+    font-size: 24px;
+    line-height: 20px;
+  }
+
+  .indivbox__title--front {
+    font-size: 24px;
+    line-height: 20px;
+    text-align: end;
+  }
+
+  .kitchen__title .kitchen__title--front {
+    font-size: 24px;
+    line-height: 20px;
+  }
+
+  .kitchen-wrapper {
+    padding: 20px 0;
+  }
+
+  .food-wrapper {
+    display: none;
+  }
+
+  .kitchen__text {
+    margin: 0;
+    padding: 20px 0;
+  }
+
+  .room__title--front {
+    font-size: 24px;
+    line-height: 20px;
+  }
+
+  .room__text-wrapper {
+    padding: 0;
+  }
+
+  .room__main-text {
+    margin: 5px 0 0;
+  }
+
+  .room__list {
+    padding: 10px 0;
+  }
+
+  #room__btn {
+    padding: 5px;
+    margin: 0 auto;
+  }
+
+  .party__title--front {
+    font-size: 24px;
+    line-height: 20px;
+    text-align: start;
+  }
+
+  .faq__title--front {
+    font-size: 24px;
+    line-height: 20px;
+    text-align: start;
+  }
+
+  .accordion__items {
+    padding: 0;
+  }
+
+  .footer {
+    margin: 0;
+  }
+}

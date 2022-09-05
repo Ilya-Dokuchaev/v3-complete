@@ -1,0 +1,41 @@
+.indivbox-bg {
+    background: #F1F1F1;
+    @include bg(cover);
+    width: 100%;
+    padding-top: 130px;
+    padding-bottom: 165px;
+}
+
+.indivbox__title {
+    position: relative;
+}
+
+@include title-shadow('indivbox__title--front', 'indivbox__title--back', 'Банный набор');
+
+.indivbox__title--front {
+    top: 60px;
+}
+
+.indivbox-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 60px;
+
+}
+
+.indivbox__item {
+    max-width: 362px;
+    margin-bottom: 30px;
+
+    & img {
+        width: 100%;
+        border-radius: 5px;
+
+    }
+
+    & .indivbox-item__title {
+        padding-top: 20px;
+        font: $hFontMd;
+    }
+}

@@ -1,0 +1,29 @@
+<html lang="@@lang">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="@@description" />
+  <meta name="keywords" content="@@keywords" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+  <link rel="shortcut icon" href="@@favicon.svg" type="image/svg+xml" />
+  <link rel="shortcut icon" href="@@favicon.webp" type="image/webp" />
+  <link rel="shortcut icon" href="@@favicon.webp" type="image/x-icon" />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+  <script type="text/javascript">
+    var map;
+
+    DG.then(function () {
+      map = DG.map('map', {
+        center: [55.772208, 49.22094],
+        zoom: 16
+      });
+      DG.marker([55.772208, 49.22094]).addTo(map);
+    });
+  </script>
+
+  <title>@@title</title>
+</head>
+
+</html>

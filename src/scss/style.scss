@@ -1,0 +1,29 @@
+@import "base/*.scss";
+@import "global/*.scss";
+@import "**/_*.scss";
+@import "../components/**/*.scss";
+
+* {
+  scroll-behavior: smooth
+}
+
+
+.btn_anim {
+  @include btn_anim
+}
+
+.btn_anim__ab {
+  @include btn_anim__ab
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.reveal-active {
+  transform: translateY(0);
+  opacity: 1;
+}

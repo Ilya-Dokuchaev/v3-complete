@@ -1,0 +1,46 @@
+.discount-bg {
+  background: url(../img/discount-bg.webp);
+  background-size: contain;
+  width: 100%;
+  padding-top: 130px;
+  padding-bottom: 100px;
+}
+
+.discount__title {
+  position: relative;
+}
+
+@include title-shadow("discount__title--front",
+  "discount__title--back",
+  "Акции"
+);
+
+.discount__list {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 70px;
+  justify-content: space-between;
+}
+
+.discount-item__img {
+  width: 100%;
+  max-width: 362px;
+}
+
+.discount-item__title {
+  font: $hFontMd;
+  margin-top: 20px;
+}
+
+.discount-item__text {
+  margin-top: 15px;
+  font: $mainFont;
+}
+
+.discount__disclamer {
+  font: $mainFont;
+  max-width: 558px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 60px;
+}

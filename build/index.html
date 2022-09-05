@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+  <link rel="shortcut icon" href="img/favicons/favicon.svg" type="image/svg+xml" />
+  <link rel="shortcut icon" href="img/favicons/favicon.webp" type="image/webp" />
+  <link rel="shortcut icon" href="img/favicons/favicon.webp" type="image/x-icon" />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+  <script type="text/javascript">
+    var map;
+
+    DG.then(function () {
+      map = DG.map('map', {
+        center: [55.772208, 49.22094],
+        zoom: 16
+      });
+      DG.marker([55.772208, 49.22094]).addTo(map);
+    });
+  </script>
+
+  <title>VIZA Сауна</title>
+</head>
+
+</html>
+
+<body>
+	<div class="main">
+  <div class="container">
+    <header class="header">
+      <a href="#"><img src="img/logo.svg" alt="logo" class="header__logo" /></a>
+      <adress class="header__adress"><img src="img/map-pointer.svg" alt="map-pointer" />24/7, г. Казань, ул.
+        Минская д. 12</adress>
+      <div class="header__messandgers">
+        <a href="#" class="messandgers__whatsapp"><img src="img/whatsapp-logo.svg" alt="" class="whatsapp__logo" /></a>
+        <a href="#" class="messandgers__telegram"><img src="img/telegram-logo.svg" alt="" class="telegram__logo" /></a>
+        <a href="tel:+7(843)-259-00-99" class="messandgers__tel">8(843)-259-00-99</a>
+      </div>
+
+      <div class="header__btn btn_anim"><a href="#">Заказать звонок</a></div>
+    </header>
+    <div class="container ">
+      <section class="benefits">
+        <h1 class="benefits__title">
+          отдых<br />
+          для семьи и компании
+        </h1>
+        <ul class="benefits__list">
+          <li class="benefits__item --svg__point-li-before">От 1500 рублей/час</li>
+          <li class="benefits__item --svg__point-li-before">Вместимость до 15 человек</li>
+          <li class="benefits__item --svg__point-li-before">Уборка антисептиком после каждого гостя</li>
+          <li class="benefits__item --svg__point-li-before">Дизайнерский ремонт 2022 года</li>
+        </ul>
+        <div class="benefit__button btn_anim"><a href="#">Забронировать</a></div>
+      </section>
+    </div>
+  </div>
+</div>
+	<div class="bg">
+  <div class="container">
+    <div class="photo__title">
+      <h2 class="photo__title--back">Фото и видеоэкскурсия</h2>
+      <h2 class="photo__title--front">и видеоэкскурсия</h2>
+    </div>
+
+    <div id="mainCarousel" class="carousel">
+      <div class="carousel__slide video-pl" data-src="https://www.youtube.com/watch?v=br3ig82_SgI&t=14s"
+        data-fancybox="gallery">
+        <a class="play-btn  " href="#" data-fancybox="video-gallery"
+          data-src="https://www.youtube.com/watch?v=br3ig82_SgI&t=14s">
+          <div class="--svg__play-btn btn_anim__ab"></div>
+          <img id='video-bg' src="img/video-bg.webp" />
+        </a>
+      </div>
+      <div class="carousel__slide" data-src="img/slide01.webp" data-fancybox="gallery">
+        <img src="img/slide01.webp" />
+      </div>
+      <div class="carousel__slide" data-src="img/slide02.webp" data-fancybox="gallery">
+        <img src="img/slide02.webp" />
+      </div>
+      <div class="carousel__slide" data-src="img/slide03.webp" data-fancybox="gallery">
+        <img src="img/slide03.webp" />
+      </div>
+      <div class="carousel__slide" data-src="img/slide04.webp" data-fancybox="gallery">
+        <img data-lazy-src="img/slide04.webp" />
+      </div>
+    </div>
+    <div id="thumbCarousel" class="carousel">
+      <div class="carousel__slide">
+        <img class="panzoom__content" src="img/video-bg.webp" />
+      </div>
+      <div class="carousel__slide">
+        <img class="panzoom__content" src="img/slide01.webp" />
+      </div>
+      <div class="carousel__slide">
+        <img class="panzoom__content" src="img/slide02.webp" />
+      </div>
+      <div class="carousel__slide">
+        <img class="panzoom__content" src="img/slide03.webp" />
+      </div>
+      <div class="carousel__slide">
+        <img class="panzoom__content" src="img/slide04.webp" />
+      </div>
+    </div>
+    <div class="book__btn btn_anim"><a href="#">Забронировать</a></div>
+  </div>
+</div>
+	<div class="services-bg">
+  <div class="container reveal">
+    <div class="section__title">
+      <h2 class="section__title--back">Что получит дорогой гость</h2>
+      <h2 class="section__title--front">дорогой гость</h2>
+
+    </div>
+    <div class="services">
+      <div class="services__block">
+        <img src="img/services01.webp" alt="" class="services-block__img" />
+        <div class="services-block__text">
+          <h3 class="services-block__title">
+            Оздоровительные<br />
+            процедуры
+          </h3>
+          <ul class="services-block__list ">
+            <li class="services-list__item --svg__point-li-before ">Сауна</li>
+            <li class="services-list__item --svg__point-li-before">Хамам
+            </li>
+            <li class="services-list__item --svg__point-li-before">Бассейн</li>
+            <li class="services-list__item --svg__point-li-before">SPA процедуры</li>
+          </ul>
+        </div>
+      </div>
+      <div class="services__block">
+        <img src="img/services02.webp" alt="" class="services-block__img" />
+        <div class="services-block__text">
+          <h3 class="services-block__title">
+            Отдых<br />
+            и общение
+          </h3>
+          <ul class="services-block__list ">
+            <li class="services-list__item --svg__point-li-before">Лаундж зона</li>
+            <li class="services-list__item --svg__point-li-before">Бильярд</li>
+            <li class="services-list__item --svg__point-li-before">2 комнаты отдыха</li>
+            <li class="services-list__item --svg__point-li-before">Мини-кухня</li>
+            <li class="services-list__item --svg__point-li-before">Настольные игры</li>
+            <li class="services-list__item --svg__point-li-before">Гостиничный номер</li>
+          </ul>
+        </div>
+      </div>
+      <div class="services__block">
+        <img src="img/services03.webp" alt="" class="services-block__img" />
+        <div class="services-block__text">
+          <h3 class="services-block__title">
+            Медиа<br />
+            развлечения
+          </h3>
+          <ul class="services-block__list">
+            <li class="services-list__item --svg__point-li-before">Караоке</li>
+            <li class="services-list__item --svg__point-li-before">Музыка</li>
+            <li class="services-list__item --svg__point-li-before">Плазменный телевизор 65''</li>
+            <li class="services-list__item --svg__point-li-before">Xbox Series X</li>
+          </ul>
+        </div>
+      </div>
+      <div class="services__block">
+        <img src="img/services04.webp" alt="" class="services-block__img" />
+        <div class="services-block__text">
+          <h3 class="services-block__title">
+            Всегда<br />
+            в наличии
+          </h3>
+          <ul class="services-block__list">
+            <li class="services-list__item --svg__point-li-before">Алкогольные напитки</li>
+            <li class="services-list__item --svg__point-li-before">Снеки</li>
+            <li class="services-list__item --svg__point-li-before">Кальян</li>
+            <li class="services-list__item --svg__point-li-before">Авторские чаи</li>
+            <li class="services-list__item --svg__point-li-before">Банные принадлежности</li>
+            <li class="services-list__item --svg__point-li-before">Косметическая продукция</li>
+            <li class="services-list__item --svg__point-li-before">Эфирные масла</li>
+            <li class="services-list__item --svg__point-li-before">Веники (бамбуковые)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+	<div class="square-bg">
+  <div class="container reveal">
+    <div class="square__text-box">
+      <div class="square__title">
+        <h2 class="square__title--back">250 м2 только в Вашем распоряжении</h2>
+        <h2 class="square__title--front">только в Вашем распоряжении</h2>
+        <p class="square__text">
+          При бронировании сауна полностью закрывается для одного клиента. Вы
+          можете провести время с семьей или отдохнуть в компании друзей.
+        </p>
+        <p class="square__text">
+          Вас не будут отвлекать посторонние гости. В сауне останется персонал,
+          готовый позаботиться о Вас, учтиво выполнить Ваши пожелания и решить
+          любую задачу.
+        </p>
+        <p class="square__text">
+          Мы не используем персональные данные наших клиентов для рекламных
+          рассылок и не передаем информацию о гостях третьим лицам.
+        </p>
+        <p class="square__text">
+          С нами Вы можете полностью расслабиться и знать что рядом все свои.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+	<div class="discount-bg">
+  <div class="container reveal">
+    <div class="discount__title">
+      <h2 class="discount__title--back">Акции для Вас</h2>
+      <h2 class="discount__title--front">для Вас</h2>
+    </div>
+    <div class="discount__list">
+      <div class="discount__item">
+        <img src="img/discount01.webp" alt="" class="discount-item__img" />
+        <h3 class="discount-item__title">Каждый четвертый час в подарок!</h3>
+      </div>
+      <div class="discount__item">
+        <img src="img/discount02.webp" alt="" class="discount-item__img" />
+        <h3 class="discount-item__title">Скидка 25% на день рождения!</h3>
+        <p class="discount-item__text">
+          Действует 5 дней до и 5 дней после <br />
+          праздничной даты.
+        </p>
+      </div>
+      <div class="discount__item">
+        <img src="img/discount03.webp" alt="" class="discount-item__img" />
+        <h3 class="discount-item__title">Счастливые часы! 1500 руб./ час</h3>
+        <p class="discount-item__text">
+          С 8:00 до 16:00 с понедельника <br />
+          по четверг
+        </p>
+      </div>
+    </div>
+    <div class="discount__disclamer">
+      Дорогие гости в нашем заведении акции не суммируются, не действуют в
+      праздничные дни и Новогодние каникулы.
+    </div>
+  </div>
+</div>
+	<div class="healthncare-bg">
+    <div class="container reveal">
+        <div class="healthncare__container">
+            <img src="img/healthncare-img.webp" alt="" class="healthncare__img">
+            <div class="healthncare__text">
+                <div class="healthncare__title">
+                    <h2 class="healthncare__title--front">Все для</h2>
+                    <h2 class="healthncare__title--back">Все для здоровья и отдыха</h2>
+                </div>
+                <h3 class="healthncare__text-title">Финская сауна</h3>
+                <p class="healthncare__text-main">Сауна разогревается до 120 градусов за 15 минут, а высокоточные
+                    датчики позволяют регулировать жар.
+                    К Вашему приходу будет готова нужная температура.
+                    Для наших гостей мы сохраняем высокие стандарты качества:</p>
+                <ul class="healthncare__list">
+                    <li class="healthncare__list-item --svg__point-li-before">Бамбуковые веники и эфирные масла
+
+                    </li>
+                    <li class="healthncare__list-item --svg__point-li-before"> Древесная отделка и пологи из липы экстра
+                        сорта, которая не
+                        выделяет смолу, не обжигает кожу,
+                        создает эстетику и уют</li>
+                    <li class="healthncare__list-item --svg__point-li-before"> Жаркая каменка с природными камнями.</li>
+                </ul>
+                <p class="healthncare__text-main">Мы 24 часа в сутки готовим парную с горячим, но мягким воздухом,
+                    богатым выбором банных принадлежностей и травяных настоев, чтобы вы могли в любое время отдохнуть от
+                    забот.</p>
+                <div class="book__btn btn_anim"><a href="#">Забронировать</a></div>
+
+            </div>
+        </div>
+    </div>
+</div>
+	<div class="indivbox-bg">
+    <div class="container reveal">
+        <div class="indivbox__title">
+            <h2 class="indivbox__title--front"> индивидуально для каждого</h2>
+            <h2 class="indivbox__title--back">Банный набор <br> индивидуально для каждого</h2>
+        </div>
+        <div class="indivbox-wrapper">
+            <div class="indivbox__item">
+                <img src="img/indivbox01.webp" alt="" class="indivbox-item__img">
+                <h3 class="indivbox-item__title">Массажные бамбуковые веники</h3>
+            </div>
+            <div class="indivbox__item">
+                <img src="img/indivbox02.webp" alt="" class="indivbox-item__img">
+                <h3 class="indivbox-item__title">Натуральная косметика для тела</h3>
+            </div>
+            <div class="indivbox__item">
+                <img src="img/indivbox03.webp" alt="" class="indivbox-item__img">
+                <h3 class="indivbox-item__title">Эфирные масла, ароматерапия</h3>
+            </div>
+            <div class="indivbox__item">
+                <img src="img/indivbox04.webp" alt="" class="indivbox-item__img">
+                <h3 class="indivbox-item__title">Банные простыни</h3>
+            </div>
+            <div class="indivbox__item">
+                <img src="img/indivbox05.webp" alt="" class="indivbox-item__img">
+                <h3 class="indivbox-item__title">Головные уборы и полотенца</h3>
+            </div>
+            <div class="indivbox__item">
+                <img src="img/indivbox06.webp" alt="" class="indivbox-item__img">
+                <h3 class="indivbox-item__title">Халат и тапочки</h3>
+            </div>
+
+        </div>
+    </div>
+</div>
+	<div class="kitchen-bg ">
+    <div class="container reveal">
+        <div class="kitchen-wrapper">
+            <div class="kitchen__title container">
+                <h2 class="kitchen__title--back">Кухня и бар</h2>
+                <h2 class="kitchen__title--front">Кухня и </h2>
+            </div>
+            <div class="kitchen__content">
+                <div class="food-wrapper">
+                    <div class="food-box food-box1">
+                        <div class="--svg__point-li"></div>
+                        <div class="food-text">Снеки</div>
+                    </div>
+                    <div class="food-box food-box2">
+                        <div class="--svg__point-li"></div>
+                        <div class="food-text">Алкогольные напитки</div>
+                    </div>
+                    <div class="food-box food-box3">
+                        <div class="--svg__point-li"></div>
+                        <div class="food-text">Кальян</div>
+                    </div>
+                    <div class="food-box food-box4">
+                        <div class="--svg__point-li"></div>
+                        <div class="food-text">Авторские чаи</div>
+                    </div>
+                    <div class="food-box food-box5">
+                        <div class="--svg__point-li"></div>
+                        <div class="food-text">Соки и газировки</div>
+                    </div>
+
+                </div>
+
+                <div class="kitchen-delivery__wrapper">
+                    <p class="kitchen__text">Алкоголь и еду можно принести с собой, купить в баре <br>
+                        или заказать доставку
+                        прямо в
+                        сауну
+                    </p>
+                    <div class="delivery-pic__wrapper">
+                        <a href="#" class="kitchen-delivery__delivery btn_anim">
+                            <img src="img/delivery.svg" alt="" class="delivery__pic">
+                        </a>
+                        <a href="#" class="kitchen-delivery__yandex btn_anim">
+                            <img src="img/yandex.webp" alt="" class="yandex__pic">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+	<div class="room-bg">
+
+    <img src="img/room-bg.webp" alt="" class="room__bg">
+    <div class="container reveal">
+        <div class="room-wrapper">
+            <div class="room__slider">
+                <div id="roomCarousel" class="carousel">
+                    <div class="carousel__slide" data-src="img/room01.webp" data-fancybox="gallery2">
+                        <div class="room-btn btn_anim"><a href="#">От 1000 рублей</a></div>
+                        <img src="img/room01.webp" />
+                    </div>
+                    <div class="carousel__slide" data-src="img/room02.webp" data-fancybox="gallery2">
+                        <div class="room-btn btn_anim"><a href="#">От 1000 рублей</a></div>
+                        <img src="img/room02.webp" />
+                    </div>
+                    <div class="carousel__slide" data-src="img/room03.webp" data-fancybox="gallery2">
+                        <div class="room-btn btn_anim"><a href="#">От 1000 рублей</a></div>
+                        <img src="img/room03.webp" />
+                    </div>
+                    <div class="carousel__slide" data-src="img/room04.webp" data-fancybox="gallery2">
+                        <div class="room-btn btn_anim"><a href="#">От 1000 рублей</a></div>
+                        <img data-lazy-src="img/room04.webp" />
+                    </div>
+                    <div class="carousel__slide" data-src="img/room05.webp" data-fancybox="gallery2">
+                        <div class="room-btn btn_anim"><a href="#">От 1000 рублей</a></div>
+                        <img data-lazy-src="img/room05.webp" />
+                    </div>
+                </div>
+                <div id="thumbRoomCarousel" class="carousel">
+                    <div class="carousel__slide">
+                        <img class="panzoom__content" src="img/room01.webp" />
+                    </div>
+                    <div class="carousel__slide">
+                        <img class="panzoom__content" src="img/room02.webp" />
+                    </div>
+                    <div class="carousel__slide">
+                        <img class="panzoom__content" src="img/room03.webp" />
+                    </div>
+                    <div class="carousel__slide">
+                        <img class="panzoom__content" src="img/room04.webp" />
+                    </div>
+                    <div class="carousel__slide">
+                        <img class="panzoom__content" src="img/room05.webp" />
+                    </div>
+                </div>
+            </div>
+            <div class="room__text-wrapper">
+                <div class="room__title">
+                    <h2 class="room__title--front">Гостиничный </h2>
+                    <h2 class="room__title--back">Гостиничный номер </h2>
+                </div>
+                <p class="room__main-text">Вы можете снять гостиничный номер без аренды сауны.
+                </p>
+                <p class="room__main-text"> Приглушенная музыка и лаконичный стиль с первых минут перенесут Вас в
+                    атмосферу спокойствия и
+                    отдыха.</p>
+                <p class="room__main-text">В номере найдется все, что нужно:</p>
+                <ul class="room__list">
+                    <li class="room-list__item --svg__point-li-before">1 кровать размером 200*200</li>
+                    <li class="room-list__item --svg__point-li-before">Комплект белья из сатина</li>
+                    <li class="room-list__item --svg__point-li-before">Плазменный телевизор </li>
+                    <li class="room-list__item --svg__point-li-before">Телефон</li>
+                    <li class="room-list__item --svg__point-li-before">Фен</li>
+                    <li class="room-list__item --svg__point-li-before">Сейф</li>
+                    <li class="room-list__item --svg__point-li-before">Мини-бар</li>
+                    <li class="room-list__item --svg__point-li-before">Станция для приготовления чая и кофе</li>
+                    <li class="room-list__item --svg__point-li-before">Ванная комната с душевой</li>
+                    <li class="room-list__item --svg__point-li-before">Банные принадлежности</li>
+                    <li class="room-list__item --svg__point-li-before">Центральная система климат-контроля</li>
+                    <li class="room-list__item --svg__point-li-before">Wi-Fi</li>
+                </ul>
+                <div id="room__btn" class="book__btn btn_anim "><a href="#">Забронировать номер</a></div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+	<div class="party-bg">
+    <div class="container reveal">
+        <div class="party__title">
+            <h2 class="party__title--front">Место для </h2>
+            <h2 class="party__title--back">Место для незабываемой<br> вечеринки</h2>
+        </div>
+        <div class="party__wrapper">
+            <div class="party__item">
+                <img src="img/party01.webp" alt="" class="party__pic">
+                <div class="party-pic__title">День рождения</div>
+            </div>
+            <div class="party__item">
+                <p>Сауна, хамам, бильярд, караоке, бассейн, авторские коктейли сделают Ваш праздник ярким и
+                    полным
+                    эмоций.</p>
+                <p> А самый радушный персонал Казани окажет Вам по-настоящему горячий прием. </p>
+            </div>
+            <div class="party__item">
+                <img src="img/party02.webp" alt="" class="party__pic">
+                <div class="party-pic__title">Новый год</div>
+            </div>
+
+            <div class="party__item">
+                <img src="img/party03.webp" alt="" class="party__pic">
+                <div class="party-pic__title">Семейный отдых</div>
+            </div>
+            <div class="party__item">
+                <img src="img/party04.webp" alt="" class="party__pic">
+                <div class="party-pic__title">Встреча с друзьями</div>
+            </div>
+            <div class="party__item">
+                <img src="img/party05.webp" alt="" class="party__pic">
+                <div class="party-pic__title">Мальчишник/Девичник</div>
+            </div>
+        </div>
+    </div>
+</div>
+	<div class="container reveal">
+    <div class="faq__title--wrapper">
+        <div class="faq__title">
+            <h2 class="faq__title--front">Часто задаваемые </h2>
+            <h2 class="faq__title--back">Часто задаваемые <br> вопросы</h2>
+        </div>
+    </div>
+    <div class="accordeon__wrapper">
+        <div class="accordion">
+            <ul class="accordion__items">
+                <li class="accordion__item">
+                    <div class="accordion__title">
+                        <h3>Можно ли приходить со своим алкоголем?</h3>
+                        <span class="accordion__icon"></span>
+                    </div>
+                    <div class="accordion__content">
+                        <p>А также диаграммы связей, которые представляют собой яркий пример континентально-европейского
+                            типа политической культуры, будут функционально разнесены на независимые элементы.
+                            Однозначно, некоторые особенности внутренней политики смешаны с не уникальными данными до
+                            степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности.
+                            Современные технологии достигли такого уровня, что реализация намеченных плановых заданий
+                            говорит о возможностях приоретизации разума над эмоциями.</p>
+                    </div>
+                </li>
+                <li class="accordion__item">
+                    <div class="accordion__title">
+                        <h3>Есть ли у вас банные принадлежности?</h3>
+                        <span class="accordion__icon"></span>
+                    </div>
+                    <div class="accordion__content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nesciunt est voluptates
+                            earum sint laborum eligendi blanditiis commodi. Consequuntur culpa ad voluptates aut
+                            vitae cumque quod quam quidem? Cupiditate, provident?</p>
+                    </div>
+                </li>
+                <li class="accordion__item">
+                    <div class="accordion__title">
+                        <h3>Можно ли париться вениками?</h3>
+                        <span class="accordion__icon"></span>
+                    </div>
+                    <div class="accordion__content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nesciunt est voluptates
+                            earum sint laborum eligendi blanditiis commodi. Consequuntur culpa ad voluptates aut
+                            vitae cumque quod quam quidem? Cupiditate, provident?</p>
+                    </div>
+                </li>
+                <li class="accordion__item">
+                    <div class="accordion__title">
+                        <h3>Сколько человек вмещает?</h3>
+                        <span class="accordion__icon"></span>
+                    </div>
+                    <div class="accordion__content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nesciunt est voluptates
+                            earum sint laborum eligendi blanditiis commodi. Consequuntur culpa ad voluptates aut
+                            vitae cumque quod quam quidem? Cupiditate, provident?</p>
+                    </div>
+                </li>
+                <li class="accordion__item">
+                    <div class="accordion__title">
+                        <h3>У вас есть кальян?</h3>
+                        <span class="accordion__icon"></span>
+                    </div>
+                    <div class="accordion__content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nesciunt est voluptates
+                            earum sint laborum eligendi blanditiis commodi. Consequuntur culpa ad voluptates aut
+                            vitae cumque quod quam quidem? Cupiditate, provident?</p>
+                    </div>
+                </li>
+                <li class="accordion__item">
+                    <div class="accordion__title">
+                        <h3>До какой температуры разогревается сауна?</h3>
+                        <span class="accordion__icon"></span>
+                    </div>
+                    <div class="accordion__content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nesciunt est voluptates
+                            earum sint laborum eligendi blanditiis commodi. Consequuntur culpa ad voluptates aut
+                            vitae cumque quod quam quidem? Cupiditate, provident?</p>
+                    </div>
+                </li>
+                <li class="accordion__item">
+                    <div class="accordion__title">
+                        <h3>Что у вас есть в меню?</h3>
+                        <span class="accordion__icon"></span>
+                    </div>
+                    <div class="accordion__content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nesciunt est voluptates
+                            earum sint laborum eligendi blanditiis commodi. Consequuntur culpa ad voluptates aut
+                            vitae cumque quod quam quidem? Cupiditate, provident?</p>
+                    </div>
+                </li>
+                <li class="accordion__item">
+                    <div class="accordion__title">
+                        <h3>Можно ли заказать к вам еду?</h3>
+                        <span class="accordion__icon"></span>
+                    </div>
+                    <div class="accordion__content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nesciunt est voluptates
+                            earum sint laborum eligendi blanditiis commodi. Consequuntur culpa ad voluptates aut
+                            vitae cumque quod quam quidem? Cupiditate, provident?</p>
+                    </div>
+                </li>
+                <li class="accordion__item">
+                    <div class="accordion__title">
+                        <h3>За сколько дней можно забронировать?</h3>
+                        <span class="accordion__icon"></span>
+                    </div>
+                    <div class="accordion__content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nesciunt est voluptates
+                            earum sint laborum eligendi blanditiis commodi. Consequuntur culpa ad voluptates aut
+                            vitae cumque quod quam quidem? Cupiditate, provident?</p>
+                    </div>
+                </li>
+                <li class="accordion__item">
+                    <div class="accordion__title">
+                        <h3>Какие у вас есть акции?</h3>
+                        <span class="accordion__icon"></span>
+                    </div>
+                    <div class="accordion__content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nesciunt est voluptates
+                            earum sint laborum eligendi blanditiis commodi. Consequuntur culpa ad voluptates aut
+                            vitae cumque quod quam quidem? Cupiditate, provident?</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+</div>
+</div>
+</div>
+	<footer class="footer reveal">
+    <div class="footer__bg">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="contacts__wrapper">
+                    <div class="footer__title">
+                        <h2 class="footer__title--front">Контакты</h2>
+                        <h2 class="footer__title--back">Контакты</h2>
+                    </div>
+                    <a href="tel:+78432590099">8(843)-259-00-99</a>
+                    <address>24/7, г. Казань, ул. Минская д.12 </address>
+                    <div class="social-media__wrapper">
+                        <div class="social-media__item">
+                            <img src="img/telegram-footer.svg" alt="">
+                            <span>Telegram</span>
+                        </div>
+                        <div class="social-media__item">
+                            <img src="img/whatsapp-footer.svg" alt="">
+                            <span>WhatsApp</span>
+                        </div>
+                        <div class="social-media__item">
+                            <img src="img/instagramm-footer.svg" alt="">
+                            <span>Instagram</span>
+                        </div>
+                        <div class="social-media__item">
+                            <img src="img/vk-footer.svg" alt="">
+                            <span>Vkontakte</span>
+                        </div>
+                    </div>
+                    <div id="room__btn" class="book__btn btn_anim "><a href="#">Забронировать</a></div>
+
+                </div>
+                <div class="map__wrapper">
+                    <div id="map"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</footer>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>

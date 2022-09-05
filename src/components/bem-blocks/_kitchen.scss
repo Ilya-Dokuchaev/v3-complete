@@ -1,0 +1,89 @@
+.kitchen-bg {
+    background: url(../img/kitchen-bg.webp);
+    @include bg(cover);
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+
+.kitchen-wrapper {
+    border-radius: 5px;
+    padding-left: 50px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    padding-top: 100px;
+    max-width: 50%;
+    margin-left: auto;
+}
+
+.kitchen__title {
+    position: relative;
+    font: $hFontLg;
+    margin-bottom: 100px;
+
+    .kitchen__title--front {
+        position: absolute;
+        left: 0;
+        font-size: 40px;
+        top: 30px;
+        color: #FFFFFF;
+
+        &::after {
+            content: 'бар';
+            color: $mainColor;
+        }
+    }
+}
+
+.kitchen__title--back {
+    color: #F1F1F1;
+    font-size: 70px;
+    line-height: 70px;
+    opacity: 0.2;
+}
+
+.kitchen__text {
+    font: $mainFont;
+    color: white;
+
+}
+
+.kitchen-delivery__wrapper {
+    & img {
+        width: 65px;
+        height: 65px;
+        border-radius: 10px;
+        margin: 30px;
+    }
+
+    padding-top: 30px;
+    display:block;
+}
+
+.food-wrapper {
+    margin: auto 0;
+    max-width: 500px;
+    width: 100%;
+}
+
+.food-box {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+
+
+    & .food-text {
+        font: $mainFont;
+        color: white;
+        margin-left: 20px;
+    }
+
+    & .--svg__point-li {
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 25px;
+        height: 25px;
+    }
+}

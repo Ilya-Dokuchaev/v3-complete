@@ -1,0 +1,49 @@
+.party-bg {
+    background: #F1F1F1;
+    padding-top: 130px;
+}
+
+.party__title {
+    position: relative;
+}
+
+@include title-shadow('party__title--front', 'party__title--back', '');
+
+.party__title--front {
+    top: 60px;
+
+    &::after {
+        content: ' незабываемой вечеринки';
+        color: $mainColor;
+    }
+}
+
+.party__wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.party__item {
+    max-width: 370px;
+
+    & img {
+        max-width: 370px;
+        border-radius: 5px;
+
+    }
+
+    & p {
+        font: $mainFont;
+        padding: 20px;
+        text-align: center;
+    }
+
+    & .party-pic__title {
+        font: $hFontMd;
+        padding: 30px;
+    }
+}

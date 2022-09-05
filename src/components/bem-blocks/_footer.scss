@@ -1,0 +1,93 @@
+ .footer__bg {
+     background: url(../img/footer-bg.webp);
+     width: 100%;
+     @include bg(cover);
+     padding: 120px 0;
+ }
+
+
+
+ .footer {
+     margin-bottom: 200px;
+ }
+
+
+ .footer__wrapper {
+     top: 100px;
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .contacts__wrapper {
+     margin-right: 77px;
+ }
+
+ .footer__title {
+     position: relative;
+     padding-bottom: 33px;
+ }
+
+ @include title-shadow('footer__title--front', 'footer__title--back', );
+
+ .footer__title--back {
+     opacity: 0.2;
+ }
+
+ .footer__title--front {
+     color: white;
+ }
+
+ .contacts__wrapper .book__btn {
+     margin-top: 30px;
+     margin-left: 0;
+ }
+
+ .contacts__wrapper a {
+     text-decoration: none;
+     font-family: 'Montserrat';
+     font-style: normal;
+     font-weight: 700;
+     font-size: 24px;
+     line-height: 29px;
+     padding-bottom: 13px;
+
+     color: #FFFFFF;
+ }
+
+ .contacts__wrapper address {
+     font-family: 'Montserrat';
+     font-style: normal;
+     font-weight: 600;
+     font-size: 18px;
+     line-height: 25px;
+     color: #FFFFFF;
+     padding-top: 13px;
+     padding-bottom: 40px;
+ }
+
+ .social-media__item {
+     display: flex;
+     align-items: center;
+
+     &:not(:last-child) {
+         padding-bottom: 30px;
+
+     }
+
+     & span {
+         margin-left: 26px;
+         font-family: 'Oswald';
+         font-style: normal;
+         font-weight: 600;
+         letter-spacing: 0.7px;
+         font-size: 16px;
+         line-height: 30px;
+         color: #FFFFFF;
+     }
+ }
+
+ #map {
+     width: 784px;
+     height: 496px;
+     border-radius: 10px;
+ }

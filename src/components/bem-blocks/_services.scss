@@ -1,0 +1,73 @@
+.services-bg {
+  background: url(../img/services-bg.webp);
+  background-size: contain;
+
+  padding-top: 130px;
+  padding-bottom: 120px;
+}
+
+.section__title {
+  position: relative;
+}
+
+@include title-shadow("section__title--front",
+  "section__title--back",
+  "Что получит"
+);
+
+.services {
+  margin-top: 65px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.services__block {
+  display: flex;
+  align-items: flex-start;
+  width: 500px;
+}
+
+.services-block__img {
+  width: 100%;
+  height: 220px;
+  border-radius: 5px;
+  margin: 0 20px 20px 0;
+}
+
+.services-block__text {
+  max-width: 250px;
+  width: 100%;
+}
+
+.services-block__title {
+  font: $hFontMd;
+}
+
+.services-block__list {
+  list-style: none;
+  padding: 25px 0 0;
+  font: $mainFont;
+
+
+
+  & .services-list__item {
+    display: flex;
+    max-width: 200px;
+    width: 100%;
+    padding-bottom: 10px;
+    align-items: center;
+
+  }
+
+  ::before {
+    content: '';
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 25px;
+    width: 100%;
+    height: 25px;
+    margin-right: 15px;
+  }
+}

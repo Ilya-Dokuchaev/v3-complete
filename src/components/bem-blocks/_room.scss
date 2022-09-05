@@ -1,0 +1,150 @@
+.room-bg {
+    width: 100%;
+    padding-top: 130px;
+    position: relative;
+    padding-bottom: 110px;
+
+    .room__bg {
+        position: absolute;
+        top: 466px;
+        left: 0;
+        max-width: 572px;
+        height: 750px;
+    }
+}
+
+.room-wrapper {
+    display: flex;
+}
+
+.carousel__slide {
+    position: relative;
+
+    .room-btn {
+        position: absolute;
+        top: 55px;
+        right: 42px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        max-width: 152px;
+        padding: 20px 0 20px 0;
+        background-color: #ff7600;
+        border-radius: 5px;
+        cursor: pointer;
+        opacity: 0.7;
+
+        & a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font: $mainFont;
+            color: white
+        }
+    }
+
+}
+
+
+
+#roomCarousel {
+    width: 100%;
+    max-width: 754px;
+    margin: 0 auto 1rem auto;
+    padding: 0;
+
+    --carousel-button-color: #170724;
+
+    --carousel-button-svg-width: 20px;
+    --carousel-button-svg-height: 20px;
+    --carousel-button-svg-stroke-width: 2.5;
+}
+
+#roomCarousel .carousel__slide {
+    width: 100%;
+    height: 675px;
+    display: flex;
+    justify-content: center;
+
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+#roomCarousel .carousel__button {
+    display: none;
+}
+
+#thumbRoomCarousel .carousel__slide {
+    opacity: 0.5;
+    padding: 0;
+    margin: 0.25rem;
+    width: 96px;
+    height: 64px;
+    overflow: hidden;
+}
+
+#thumbRoomCarousel .carousel__slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+#thumbRoomCarousel .carousel__slide.is-nav-selected {
+    opacity: 1;
+}
+
+.room__text-wrapper {
+    max-width: 362px;
+    padding-left: 30px;
+}
+
+.room__title {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+@include title-shadow('room__title--front', 'room__title--back', '');
+
+.room__title--front::after {
+    content: 'номер';
+    color: #ff7600;
+}
+
+.room__main-text {
+    font: $mainFont;
+    line-height: 25px;
+    margin-top: 20px;
+}
+
+.room__list {
+    list-style: none;
+    padding: 25px 0 0;
+    font: $mainFont;
+
+    & .room-list__item {
+        display: flex;
+        align-items: center;
+        padding-bottom: 15px;
+    }
+
+    & ::before {
+        content: '';
+        background-size: cover;
+        background-repeat: no-repeat;
+        max-width: 25px;
+        width: 100%;
+        height: 25px;
+        margin-right: 15px;
+    }
+}
+
+#room__btn {
+    max-width: 264px;
+    width: 100%;
+    padding: 10px 30px;
+}

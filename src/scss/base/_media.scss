@@ -1,0 +1,11 @@
+@media screen and (min-width: 1920px) {
+  body {
+    zoom: 125%;
+  }
+}
+
+@media(max-width: 1300px) {
+  .header {
+    justify-content: flex-start;
+  }
+}
